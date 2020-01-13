@@ -1,0 +1,441 @@
+{
+    "root": {
+        "data": {
+            "id": "bzuc7m2mr000",
+            "created": 1578885536283,
+            "text": "1.2.0Container OverView",
+            "priority": null,
+            "resource": [],
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bzue6o1xcrc0",
+                    "created": 1578891104450,
+                    "text": "1.2.0Container Overview",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzuc8xxia800",
+                            "created": 1578885640459,
+                            "text": "1.ApplicationContext",
+                            "priority": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuc97saau00",
+                                    "created": 1578885661911,
+                                    "text": "Spring IoC"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuc9bm5tns0",
+                                    "created": 1578885670248,
+                                    "text": "responsible for"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuc9fkwyg00",
+                                            "created": 1578885678879,
+                                            "text": "instaniating"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuc9k8mrds0",
+                                            "created": 1578885689021,
+                                            "text": "configuring"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuc9m5fvao0",
+                                            "created": 1578885693181,
+                                            "text": "assembling"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuca651fq80",
+                                    "created": 1578885736693,
+                                    "text": "get its instructions by reading\n configuration metadata"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucadnbwzs0",
+                                            "created": 1578885753036,
+                                            "text": "instantiate"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucah4virc0",
+                                            "created": 1578885760627,
+                                            "text": "configure"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucaiblkl40",
+                                            "created": 1578885763211,
+                                            "text": "assemble"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzucb7xmxpc0",
+                                    "created": 1578885818963,
+                                    "text": "configuration metadata"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucbbco3kw0",
+                                            "created": 1578885826402,
+                                            "text": "xml"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucbcz9ylk0",
+                                            "created": 1578885829946,
+                                            "text": "java annotations"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucbh4gtrc0",
+                                            "created": 1578885838967,
+                                            "text": "java code"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzucchr0ujs0",
+                            "created": 1578885918695,
+                            "text": "2. Implementaions",
+                            "priority": null,
+                            "progress": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuccl2wdmw0",
+                                    "created": 1578885925943,
+                                    "text": "Stand-alone applications",
+                                    "layout_right_offset": {
+                                        "x": 427,
+                                        "y": 21
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucctesd080",
+                                            "created": 1578885944076,
+                                            "text": "ClassPathXmlApplicationContext",
+                                            "layout_right_offset": {
+                                                "x": 453,
+                                                "y": 29
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuccxtftgg0",
+                                            "created": 1578885953669,
+                                            "text": "FileSystemXmlApplicationContext",
+                                            "layout_right_offset": {
+                                                "x": 453,
+                                                "y": 29
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzucurickww0",
+                                    "created": 1578887350493,
+                                    "text": "configuration metadata",
+                                    "layout_right_offset": {
+                                        "x": 423,
+                                        "y": 42
+                                    },
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucuhml1qw0",
+                                            "created": 1578887328981,
+                                            "text": "XML configuration metadata",
+                                            "layout_right_offset": {
+                                                "x": 440,
+                                                "y": 31
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucunjpwqw0",
+                                            "created": 1578887341869,
+                                            "text": "Java annotation",
+                                            "layout_right_offset": {
+                                                "x": 419,
+                                                "y": 59
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzue69uvdp40",
+                            "created": 1578891073548,
+                            "text": "1.2",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzucvur236w0",
+                                    "created": 1578887435914,
+                                    "text": "3.High Level View"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucw0ge3yw0",
+                                            "created": 1578887448330,
+                                            "text": "",
+                                            "image": "https://docs.spring.io/spring/docs/current/spring-framework-reference/images/container-magic.png",
+                                            "imageTitle": "container magic",
+                                            "imageSize": {
+                                                "width": 200,
+                                                "height": 118
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzucwk1b63k0",
+                    "created": 1578887490954,
+                    "text": "1.2.1Configuration Metadata"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzucxi0ywx40",
+                            "created": 1578887564944,
+                            "text": "0. Overview"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzucxnaim1k0",
+                                    "created": 1578887576405,
+                                    "text": "Spring IoC container consumes a form of configuration metadata."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzucydbc0280",
+                                    "created": 1578887633051,
+                                    "text": "format"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzucyjab1u80",
+                                            "created": 1578887646049,
+                                            "text": "xml"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucylxfre80",
+                                            "created": 1578887651801,
+                                            "text": "java annotation"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzucz0uyxmo0",
+                                                    "created": 1578887684304,
+                                                    "text": "Spring 2.5"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzucz5v20zc0",
+                                            "created": 1578887695193,
+                                            "text": "Java based configuration"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuczc43c3c0",
+                                    "created": 1578887708800,
+                                    "text": "configuration"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuczjgtzdc0",
+                                            "created": 1578887724808,
+                                            "text": "more than one bean that the container must manage"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzue7s0xpi00",
+                    "created": 1578891191461,
+                    "text": "1.2.2Instantiating a Container"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzue81o3yj40",
+                            "created": 1578891212453,
+                            "text": "location path or paths to an ApplicationContext \n constructor are resource strings that let the container \n load configuration metadata from a variety external resources"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzueft996tc0",
+                            "created": 1578891821054,
+                            "text": "Composing XML-based Configuration Metadata"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuefybtus80",
+                                    "created": 1578891832094,
+                                    "text": "<import resources=\"services.xml\" />"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuege4z5nk0",
+                            "created": 1578891866508,
+                            "text": "Groovy Bean Definition DSL"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzueiuakcsg0",
+                    "created": 1578892058403,
+                    "text": "1.2.3Using the container"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzuej0kxlo80",
+                            "created": 1578892072090,
+                            "text": "ApplicaitonContext is the interface for an advanced \n factory capable of maintaining a registry of  \ndifferent beans and their dependencies."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzuenml2zts0",
+                            "created": 1578892433445,
+                            "text": "ClassPathXmlApplicationContext"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuenuaibm80",
+                                    "created": 1578892450220,
+                                    "text": "XmlBeanDefinitionReader"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuenz55dwg0",
+                            "created": 1578892460780,
+                            "text": "GenericGroovyApplicationContext"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzueo3k6j340",
+                                    "created": 1578892470396,
+                                    "text": "GroovyBeanDefinitionReader"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

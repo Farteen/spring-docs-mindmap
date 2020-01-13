@@ -1,0 +1,440 @@
+{
+    "root": {
+        "data": {
+            "id": "bzuepciuqlk0",
+            "created": 1578892568271,
+            "text": "1.3.0Bean Overview"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bzuepgp0xtc0",
+                    "created": 1578892577351,
+                    "text": "1.3.0"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzufaz23vw80",
+                            "created": 1578894262972,
+                            "text": "created with the configuration metadata"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzufb7h7r200",
+                            "created": 1578894281300,
+                            "text": "within the container itself these bean definitions  \nare represented as BeanDefinition objects"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzufbq5ocl40",
+                                    "created": 1578894321961,
+                                    "text": "a package qualified class"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufbwggecg0",
+                                    "created": 1578894335673,
+                                    "text": "bean behavioral configuration elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzufc3b1ykw0",
+                                            "created": 1578894350584,
+                                            "text": "lifecycle"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzufc4swvw80",
+                                            "created": 1578894353841,
+                                            "text": "scope"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufc8g0psw0",
+                                    "created": 1578894361768,
+                                    "text": "references to other beans"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufcegqcp40",
+                                    "created": 1578894374872,
+                                    "text": "other configuration settings to set in the newly created object"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzufd0ejhew0",
+                            "created": 1578894422629,
+                            "text": "Bean Definition"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzufd7a207k0",
+                                    "created": 1578894437595,
+                                    "text": "Class"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufd8m47340",
+                                    "created": 1578894440501,
+                                    "text": "Name"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufd9l0udc0",
+                                    "created": 1578894442612,
+                                    "text": "Scope"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufdamqa740",
+                                    "created": 1578894444892,
+                                    "text": "Constructor arguments"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufddr2cs80",
+                                    "created": 1578894451684,
+                                    "text": "Properties"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufdfc3pmg0",
+                                    "created": 1578894455133,
+                                    "text": "Autowiring mode"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufdidlxn40",
+                                    "created": 1578894461754,
+                                    "text": "Lazy initialization mode"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufdulwpig0",
+                                    "created": 1578894488378,
+                                    "text": "Initialization method"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufdnx9eeg0",
+                                    "created": 1578894473827,
+                                    "text": "Destruction method"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzufncd5p7k0",
+                    "created": 1578895232308,
+                    "text": "1.3.1Naming Beans"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzufnw0ozhc0",
+                            "created": 1578895275090,
+                            "text": "Identifier",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzufnhouhi80",
+                                    "created": 1578895243899,
+                                    "text": "every bean has one or more identifiers."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufnozh7rs0",
+                                    "created": 1578895259779,
+                                    "text": "These identifiers must be unique within the container that \nhosts the bean"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufomfeog80",
+                                    "created": 1578895332576,
+                                    "text": "Usually has only one identifier."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufosla4340",
+                                    "created": 1578895345992,
+                                    "text": "Alias"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzufoyptnfc0",
+                            "created": 1578895359327,
+                            "text": "Configuration metadata"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzufp21tl600",
+                                    "created": 1578895366583,
+                                    "text": "xml"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzufp2zye800",
+                                            "created": 1578895368647,
+                                            "text": "id"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzufp3wr8vc0",
+                                            "created": 1578895370630,
+                                            "text": "name"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufpwcgcvs0",
+                                    "created": 1578895432530,
+                                    "text": "Convention"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzufpy0our40",
+                                            "created": 1578895436172,
+                                            "text": "lowercase letter"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzufq98h6rs0",
+                                            "created": 1578895460587,
+                                            "text": "camel-cased"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzufqe13o400",
+                                    "created": 1578895471025,
+                                    "text": "Alias"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzufqfeg9ug0",
+                                            "created": 1578895474009,
+                                            "text": "alias"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzufuwoush40",
+                    "created": 1578895825100,
+                    "text": "1.3.2 Instantiating Beans"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzufveutm1s0",
+                            "created": 1578895864643,
+                            "text": "A bean definition is essentially a recipe for \ncreating one or more objects."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzufvuz8h2g0",
+                            "created": 1578895899738,
+                            "text": "The container looks at the recipe for a named be\nan when asked and use the configuration metadata\n encapsulated by that bean definition to \ncreate (or acquire) an actual object."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzufxupqkwg0",
+                            "created": 1578896055892,
+                            "text": "xml"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzufxw17o6o0",
+                                    "created": 1578896058763,
+                                    "text": "class"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzufy2083d40",
+                                            "created": 1578896071764,
+                                            "text": "specify the bean class to be constructed in the\n case where the container itself directly"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuhbxm75xs0",
+                                            "created": 1578899980417,
+                                            "text": "to specify the actual class containing the \nstatic factory method"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuhcvt9bn40",
+                                            "created": 1578900054855,
+                                            "text": "Notice"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzuhcxnoiy80",
+                                                    "created": 1578900058871,
+                                                    "text": "Inner class names"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "bzuhczxbhm80",
+                                                            "created": 1578900063807,
+                                                            "text": "$"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuhd6561540",
+                            "created": 1578900077342,
+                            "text": "Instantiation with a Constructor"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzuhdizspt40",
+                            "created": 1578900105316,
+                            "text": "Instantiation with a static Factory Method"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuhfklzpaw0",
+                                    "created": 1578900265563,
+                                    "text": "factory-method"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuhfr1vugw0",
+                                    "created": 1578900279585,
+                                    "text": "class"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuhf46jkdk0",
+                            "created": 1578900229800,
+                            "text": "Instantiation by Using an Instance Factory Method"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuhffthkv40",
+                                    "created": 1578900255132,
+                                    "text": "factory-bean"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuhfibux9k0",
+                                    "created": 1578900260597,
+                                    "text": "fatory-method"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
