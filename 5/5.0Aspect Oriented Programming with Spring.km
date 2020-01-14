@@ -602,7 +602,8 @@
                         "data": {
                             "id": "bzv936kbtc80",
                             "created": 1578978285695,
-                            "text": "Goals"
+                            "text": "Goals",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -629,6 +630,105 @@
                                         "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv96veawd40",
+                                    "created": 1578978574843,
+                                    "text": "Spring Framework's AOP is normally used in conjunction with the Spring IoC container. Aspects are configured by using normal bean definition syntax."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv994yi36g0",
+                                    "created": 1578978752383,
+                                    "text": "Complementary with AspectJ"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzv99gt160w0",
+                    "created": 1578978778174,
+                    "text": "5.3 AOP Proxies"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzv9ghirmqo0",
+                            "created": 1578979328279,
+                            "text": "Defaults to using standard JDK dynamic proxies for AOP proxies. This enables any interface to be proxied."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzv9gyup7a00",
+                            "created": 1578979366006,
+                            "text": "CGLIB proxies to proxy classes rather than interfaces. CGLIB is used if a business object does not implement an interface."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzv9hozlk680",
+                            "created": 1578979422899,
+                            "text": "Good practice to program to interfaces rather than classes, business classes normally implement one or more busienss interfaces."
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzv9i8bi1tk0",
+                            "created": 1578979464977,
+                            "text": "Possible to force the use of CGLIB"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzv9tuxy2sg0",
+                    "created": 1578980376229,
+                    "text": "5.4 @AspectJ support"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzv9u1qb63c0",
+                            "created": 1578980391005,
+                            "text": "Overview"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzv9u2xyfy00",
+                                    "created": 1578980393644,
+                                    "text": "@AspectJ refers to a style of declaring aspects as regular Java classes"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv9zb59th40",
+                                    "created": 1578980803322,
+                                    "text": "Spring interprets the same annotations as AspectJ 5, using a librrary supplied by AspectJ for pointcut parsing and matching."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv9zyza10o0",
+                                    "created": 1578980855202,
+                                    "text": "The AOP is still pure Spring AOP, thogh, and there is no dependency on the AspectJ compiler or weaver."
+                                },
+                                "children": []
                             }
                         ]
                     }
