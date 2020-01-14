@@ -1,0 +1,340 @@
+{
+    "root": {
+        "data": {
+            "id": "bzuhi100sl40",
+            "created": 1578900457968,
+            "text": "1.4Dependencies"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bzuhi4r1s0g0",
+                    "created": 1578900466133,
+                    "text": "1.4.0"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzuhiri75s00",
+                            "created": 1578900515664,
+                            "text": "A typical enterprise application does not consist of a single object"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzuhieul6ls0",
+                    "created": 1578900488115,
+                    "text": "1.4.1 Dependency Injection",
+                    "layout_mind_offset": {
+                        "x": 26.000000000000114,
+                        "y": 7
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzuhtutxc280",
+                            "created": 1578901384909,
+                            "text": "DI is a process whereby objects define their\ndependencies only through constructor \narguments, arguments to a factory method, \nor properties that are set on the object instance\nafter it is constructed or returned"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzuhsy4k9080",
+                            "created": 1578901313718,
+                            "text": "Constructor-based DI"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuin4ntd8o0",
+                                    "created": 1578903678868,
+                                    "text": "Constructor Argument Resolution",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuinqgd1xk0",
+                                            "created": 1578903726307,
+                                            "text": "<constructor-arg ref=\"XXXXX\">"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuiapmntrk0",
+                                            "created": 1578902705777,
+                                            "text": "Constructor argument type matching"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzuio6qbl480",
+                                                    "created": 1578903761737,
+                                                    "text": "<constructor-arg type=\"int\" value=\"\" />"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuioj6y0mw0",
+                                            "created": 1578903788864,
+                                            "text": "Constructor argument index"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzuiom3z8ew0",
+                                                    "created": 1578903795215,
+                                                    "text": "<constructor-arg index=\"0\" value=\"xxx\" />"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuioyimjww0",
+                                            "created": 1578903822222,
+                                            "text": "Constructor argument name"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzuip19z8o00",
+                                                    "created": 1578903828229,
+                                                    "text": "<constructor-arg name=\"years\" value=\"xxx\" />"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuht2ybc4g0",
+                            "created": 1578901324224,
+                            "text": "Setter-based DI",
+                            "layout_left_offset": {
+                                "x": -24,
+                                "y": -40
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bzuipsk3z0w0",
+                            "created": 1578903887615,
+                            "text": "Application Context"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuipxmy3j40",
+                                    "created": 1578903898670,
+                                    "text": "support "
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuiq4anpz40",
+                                            "created": 1578903913165,
+                                            "text": "constructor-based"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzuiq4xp3mw0",
+                                            "created": 1578903914558,
+                                            "text": "setter-based"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuiqv1ifvc0",
+                            "created": 1578903971385,
+                            "text": "Dependency Resolution Process"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuiqzaps6w0",
+                                    "created": 1578903980649,
+                                    "text": "1. Application is created and initialized with configuration metadata that describes all the beans."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuisi56eqo0",
+                                    "created": 1578904100037,
+                                    "text": "2.For each bean, its dependencies are expressed in the form of properties, constructor arguments, or arguments to the static-factory method."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuit37j3jk0",
+                                    "created": 1578904145891,
+                                    "text": "3.Each property or constructor arugment is an actual definition of the value to set, or a reference to another bean in the container."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuitkfrejc0",
+                                    "created": 1578904183394,
+                                    "text": "4.Each property or constructor argument that is a value is converted from its specified format to the actual type of that property or constructor arugment"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuiur7agz40",
+                            "created": 1578904276484,
+                            "text": "When to created"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuiuv3pwg00",
+                                    "created": 1578904284975,
+                                    "text": "Singleton scope and set to be pre-instantiated are created when the container is created"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuivdfrhvs0",
+                                    "created": 1578904324885,
+                                    "text": "Otherwise, the bean is created only when it is requested"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuiwxon2xs0",
+                            "created": 1578904447322,
+                            "text": "Circular Deps"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuix3zog080",
+                                    "created": 1578904461050,
+                                    "text": "setter injection works no recommended"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzuixtqk6w80",
+                    "created": 1578904517095,
+                    "text": "1.4.2Dependencies and configuration in detail"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzuiy1ol36o0",
+                            "created": 1578904534390,
+                            "text": "Straight Values"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzuiycn5mfs0",
+                                    "created": 1578904558248,
+                                    "text": "the value attribute of the property element specifies a property or constructor argument as a human-readable string representation"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuizi4tdds0",
+                                    "created": 1578904648564,
+                                    "text": "xmlns:p"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuizkxh7z40",
+                                            "created": 1578904654651,
+                                            "text": "p:driverClassName"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuizuukfbs0",
+                                    "created": 1578904676243,
+                                    "text": "<property name=\"properties\">\n <value>jdbc.driver.className=com.mysql.jdbc.Driver</value></property></bean>",
+                                    "layout_left_offset": {
+                                        "x": -190,
+                                        "y": -2
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzuj0szia8o0",
+                                    "created": 1578904750552,
+                                    "text": "idref element"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzuj1o9kh340",
+                                            "created": 1578904818640,
+                                            "text": "simply an error-proof way to pass the id of another bean in the container to a <constructor-arg /> or <property /> element"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzuj45kzb340",
+                            "created": 1578905013064,
+                            "text": "References to Other Beans(Collaborators)"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

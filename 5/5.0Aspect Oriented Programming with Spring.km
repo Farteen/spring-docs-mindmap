@@ -1,0 +1,642 @@
+{
+    "root": {
+        "data": {
+            "id": "bzv6pcbzhp40",
+            "created": 1578971558933,
+            "text": "5.Aspect Oriented Programming with Spring"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bzv6r75bm3s0",
+                    "created": 1578971704375,
+                    "text": "5.1 AOP Concepts"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzv6rp2k0dc0",
+                            "created": 1578971743389,
+                            "text": "Terminology"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzv6rs3exeo0",
+                                    "created": 1578971749972,
+                                    "text": "Aspect"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv6s5pqpls0",
+                                            "created": 1578971779620,
+                                            "text": "A modularization of a concern that cuts across multiple classes."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv6t0f8gig0",
+                                            "created": 1578971846465,
+                                            "text": "Example"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv6t2wijf40",
+                                                    "created": 1578971851863,
+                                                    "text": "Transaction management"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv6tkxpkk00",
+                                            "created": 1578971891118,
+                                            "text": "Implemented",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv6t7ieymg0",
+                                                    "created": 1578971861895,
+                                                    "text": "aspects are implementated by using regular class"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzv6tog815k0",
+                                                    "created": 1578971898767,
+                                                    "text": "regular classes annotated with the @Aspect annotation"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv6ru90x280",
+                                    "created": 1578971754664,
+                                    "text": "Join point"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv6u05pyk00",
+                                            "created": 1578971924254,
+                                            "text": "A point during the execution of a program"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv6u8wk0ew0",
+                                                    "created": 1578971943291,
+                                                    "text": "execution of a method"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzv6ubrdjjs0",
+                                                    "created": 1578971949508,
+                                                    "text": "handling an exception"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv6ugdaewo0",
+                                            "created": 1578971959540,
+                                            "text": "In Spring AOP, a join point always represents a method execution"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv6uu1ql000",
+                                                    "created": 1578971989316,
+                                                    "text": "diff method execution vs method call",
+                                                    "note": "http://aspectj.2085585.n4.nabble.com/What-s-the-different-between-call-and-execution-td2082980.html"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "bzv717woms80",
+                                                            "created": 1578972489671,
+                                                            "text": "Call"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "bzv71a2zqsw0",
+                                                                    "created": 1578972494406,
+                                                                    "text": "advice is inserted just before transferring control to the method"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "bzv71k67g9k0",
+                                                            "created": 1578972516368,
+                                                            "text": "Execution",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "bzv71n0vs600",
+                                                                    "created": 1578972522576,
+                                                                    "text": "advice is inserted just after transferring control, whin the stack frame of the method."
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "bzv72kaxlc80",
+                                                            "created": 1578972595018,
+                                                            "text": "Implication"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "bzv72mm7bkw0",
+                                                                    "created": 1578972600053,
+                                                                    "text": "Use call pointcuts if you want to advise invocations of code in a 3rd-party jar that you aren't modifying with advice."
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv74alskzc0",
+                                    "created": 1578972730635,
+                                    "text": "Advice"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv74bz4v140",
+                                            "created": 1578972733618,
+                                            "text": "Action taken by an aspect at a particular join point"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv74p1qgy00",
+                                            "created": 1578972762074,
+                                            "text": "types"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv74prd9y80",
+                                                    "created": 1578972763624,
+                                                    "text": "around"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzv74r6bvc00",
+                                                    "created": 1578972766705,
+                                                    "text": "before"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzv74skkdnc0",
+                                                    "created": 1578972769743,
+                                                    "text": "after"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv750y92kw0",
+                                            "created": 1578972787985,
+                                            "text": "model an advice as an interceptor and maintain a chain of interceptors around the join point"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv75on2jtk0",
+                                    "created": 1578972839551,
+                                    "text": "Pointcut"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv75rgj67k0",
+                                            "created": 1578972845686,
+                                            "text": "A predicate that matches join points"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv75xd5bc80",
+                                            "created": 1578972858542,
+                                            "text": "Advice is associated with a pointcut with a pointcut expression and runs at any join point matched by the pointcut"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv76etaqhc0",
+                                            "created": 1578972896524,
+                                            "text": "The concept of join points as matched by pointcut expressions is central to AOP, and Spring uses the AspectJ pointcut expression language by default."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv7769lqfk0",
+                                    "created": 1578972956283,
+                                    "text": "Introduction"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7bp0mnxc0",
+                                            "created": 1578973310556,
+                                            "text": "Declaring addintional methods or fields on behalf of a type"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7c16e0800",
+                                            "created": 1578973337026,
+                                            "text": "Spring lets you introduce new interfaces (and a corresponding implementation) to any advised object."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7cwohps80",
+                                            "created": 1578973405601,
+                                            "text": "Inter-type declaration in AspectJ community"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv7daat71k0",
+                                    "created": 1578973435248,
+                                    "text": "Target Object"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7dcq7z6o0",
+                                            "created": 1578973440534,
+                                            "text": "An object being advised by one or more aspects."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7dmlr4ps0",
+                                            "created": 1578973462031,
+                                            "text": "Also referred to as the \"advised object\""
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7dtnrgoo0",
+                                            "created": 1578973477390,
+                                            "text": "Spring AOP is implemented by using runtime proxies, this object is always a proxied object"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv7efaqa1c0",
+                                    "created": 1578973524492,
+                                    "text": "AOP proxy"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7ehlt1wg0",
+                                            "created": 1578973529515,
+                                            "text": "An object created bytheAOP framework in order to implement the aspect contracts( advise method executions and so on)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7f8m4tpc0",
+                                            "created": 1578973588308,
+                                            "text": "In Spring Framework, an AOP proxy is a JDK dynamic proxy or a CGLIB proxy."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv7g3bcgmo0",
+                                    "created": 1578973655136,
+                                    "text": "Weaving"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7g4uua5c0",
+                                            "created": 1578973658491,
+                                            "text": "linking aspects with other application types or objects to create an advised object."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7gbymzcw0",
+                                            "created": 1578973673958,
+                                            "text": "This can be done at compile time (using the AspectJ compiler), load time, or at runtime."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7gs2k5wo0",
+                                            "created": 1578973709024,
+                                            "text": "Spring AOP, like other pure Java AOP frameworks, performs weaving at runtime."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzv7hewp1kw0",
+                            "created": 1578973758735,
+                            "text": "Spring AOP advice"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzv7iiq12g80",
+                                    "created": 1578973845404,
+                                    "text": "types",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7hkarrvs0",
+                                            "created": 1578973770470,
+                                            "text": "Before advice"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7hm94d0o0",
+                                            "created": 1578973774724,
+                                            "text": "After returning advice"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7hp32dhc0",
+                                            "created": 1578973780888,
+                                            "text": "After throwing advice"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7hsa2qtk0",
+                                            "created": 1578973787843,
+                                            "text": "After(finally) advice"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7hwaqad40",
+                                            "created": 1578973796589,
+                                            "text": "Around advice"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv7j93elts0",
+                                    "created": 1578973902809,
+                                    "text": "caveat ",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv7ilwzuag0",
+                                            "created": 1578973852355,
+                                            "text": "Using the most specific advice tyep provides a simpler programing model with less potential for errors."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7jwy69ko0",
+                                            "created": 1578973954735,
+                                            "text": "advice parameters are statically typed so that you work with advice parameters of the appropriate tyep rather than Object arrays."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv7ktc4mfs0",
+                                            "created": 1578974025236,
+                                            "text": "joint points matched by pointcuts is the key to AOP"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzv7l9g985s0",
+                                                    "created": 1578974060314,
+                                                    "text": "distinguishes it from older technologies offering only interception"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzv7lo9ug680",
+                                                    "created": 1578974092578,
+                                                    "text": "pointcuts enable advice to be targeted independently of the object-oriented hierarchy."
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bzv8t8tu5dk0",
+                    "created": 1578977506982,
+                    "text": "5.2Spring AOP Capabilities and Goals"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bzv93256kyg0",
+                            "created": 1578978276072,
+                            "text": "Capabilities",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzv90emf0ts0",
+                                    "created": 1578978068143,
+                                    "text": "Can"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv90kr3k7s0",
+                                            "created": 1578978081487,
+                                            "text": "Pure Java"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv90o7aem80",
+                                            "created": 1578978088996,
+                                            "text": "No need for a specifal compilation process"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv90vd2hy80",
+                                            "created": 1578978104583,
+                                            "text": "Not need to control the class loader hierarchy"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv913rb7cw0",
+                                            "created": 1578978122858,
+                                            "text": "Sutable for use in a servlet or application server"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzv90g3vc5s0",
+                                    "created": 1578978071375,
+                                    "text": "Constraints",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv91d3nij40",
+                                            "created": 1578978143197,
+                                            "text": "Only method execution join points (advising the execution of methods on Spring beans)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv92kpesnk0",
+                                            "created": 1578978238113,
+                                            "text": "Filed interception is not implemeted"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzv936kbtc80",
+                            "created": 1578978285695,
+                            "text": "Goals"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzv9396ixlc0",
+                                    "created": 1578978291391,
+                                    "text": "Differs from that of most other AOP frameworks."
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzv949yv81s0",
+                                            "created": 1578978371469,
+                                            "text": "Not to provide the most complete AOP implementation"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzv94hoo3ds0",
+                                            "created": 1578978388266,
+                                            "text": "To provide a close integration between AOP implementation and Spring IoC, to help solve common problems in enterprise applications."
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
