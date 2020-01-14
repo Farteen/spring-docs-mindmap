@@ -731,6 +731,506 @@
                                 "children": []
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzva2tyj0aw0",
+                            "created": 1578981079365,
+                            "text": "5.4.1Enabling @AspectJ support"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzva6hf4elk0",
+                                    "created": 1578981365527,
+                                    "text": "1. aspectjweaver.jar library is on the classpath of your application 1.8 or later"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzva6ssbqlc0",
+                                    "created": 1578981390270,
+                                    "text": "2. Enabling @AspectJ Support With Java Configuration"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzva753xiow0",
+                                            "created": 1578981417093,
+                                            "text": "@EnableAspectJAutoProxy"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzva74ak4dk0",
+                                    "created": 1578981415317,
+                                    "text": "3.Enabling @AspectJ Support with XML Configuration"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzva7fsiatk0",
+                                            "created": 1578981440347,
+                                            "text": "<aop:aspectj-autoproxy />"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzva7ocn6ag0",
+                            "created": 1578981458979,
+                            "text": "5.4.2 Declaring an Aspect"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzva9kfr49s0",
+                                    "created": 1578981607188,
+                                    "text": "xml"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzva9lbdpe80",
+                                            "created": 1578981609100,
+                                            "text": "<bean id=\"myAspect\" class=\"org.xyz.NotVeryUsfulAspect\"> </bean>"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvaa0ud70g0",
+                                    "created": 1578981642900,
+                                    "text": "annotation",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvaa2yxwxc0",
+                                            "created": 1578981647530,
+                                            "text": "@Aspect"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvaalh8kt40",
+                                            "created": 1578981687819,
+                                            "text": "Aspects can have"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvaauqd9vs0",
+                                                    "created": 1578981707962,
+                                                    "text": "Methods"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvaawiuddk0",
+                                                    "created": 1578981711861,
+                                                    "text": "fields"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvab3hse540",
+                                                    "created": 1578981727034,
+                                                    "text": "pointcut",
+                                                    "priority": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvabb7gmww0",
+                                                    "created": 1578981743824,
+                                                    "text": "advice"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvabdrs9wg0",
+                                                    "created": 1578981749406,
+                                                    "text": "introduction"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bzvacx8rmt40",
+                            "created": 1578981870156,
+                            "text": "5.4.3 Declaring a Pointcut",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bzvajpeeg7c0",
+                                    "created": 1578982401632,
+                                    "text": "Overview",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvacyy3nw00",
+                                            "created": 1578981873865,
+                                            "text": "pointcuts determine join points of interest and thus enable us to control when advice executes."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvadruu6so0",
+                                            "created": 1578981936794,
+                                            "text": "Spring Only supports method execution join points for Spring beans"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvae7o7ojk0",
+                                    "created": 1578981971222,
+                                    "text": "Parts"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvaedrbp0g0",
+                                            "created": 1578981984471,
+                                            "text": "1.Signature comprising a name and any parameters"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvafjdrg540",
+                                                    "created": 1578982075076,
+                                                    "text": "Provided by a regular method definition"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvaeqve3sw0",
+                                            "created": 1578982013015,
+                                            "text": "2.A pointcut expression that determines exactly which method executions we are interested in"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvagu3fk2o0",
+                                    "created": 1578982176760,
+                                    "text": "Example"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvahdyniqw0",
+                                            "created": 1578982220007,
+                                            "text": "@Pointcut(\"execution (* transfer(..))\") //the pointcut expression\n private void oldTransfer() {} // the pointcut signature"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvaji73r4w0",
+                                    "created": 1578982385953,
+                                    "text": "Supported Pointcut Designators"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvaklibb740",
+                                            "created": 1578982471526,
+                                            "text": "execution"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvalpuyqhk0",
+                                                    "created": 1578982559362,
+                                                    "text": "Matching method execution join points."
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvam5d98f40",
+                                                    "created": 1578982593120,
+                                                    "text": "Primary piontcut to use when working with Spring AOP"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvaknif7ps0",
+                                            "created": 1578982475886,
+                                            "text": "within"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvalxnl2jk0",
+                                                    "created": 1578982576330,
+                                                    "text": "Limits matching to join points within certain types"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvambqoqlk0",
+                                                    "created": 1578982606992,
+                                                    "text": "the execution of a method declared within a matching type when using Spring AOP"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakoebu340",
+                                            "created": 1578982477815,
+                                            "text": "this"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvan5hdhtk0",
+                                                    "created": 1578982671733,
+                                                    "text": "the bean reference is an instance of the given type"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvancu8xbs0",
+                                                    "created": 1578982687749,
+                                                    "text": "the execution of methods when using Spring AOP"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakpgf4rk0",
+                                            "created": 1578982480118,
+                                            "text": "target"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvaphfsek00",
+                                                    "created": 1578982854487,
+                                                    "text": "the target object is an instance of the given type"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvapnvv3h40",
+                                                    "created": 1578982868519,
+                                                    "text": "the execution of methods when using Spring AOP"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakqbvsvk0",
+                                            "created": 1578982482021,
+                                            "text": "args"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvaptr4p7k0",
+                                                    "created": 1578982881294,
+                                                    "text": "the arguments are instances of the given types"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "bzvaq4a6brs0",
+                                                    "created": 1578982904213,
+                                                    "text": "the execution of the methods when using Spring AOP"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakr78qmw0",
+                                            "created": 1578982483917,
+                                            "text": "@target"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvaqdsum2g0",
+                                                    "created": 1578982924933,
+                                                    "text": "the class of the executing object has an annotation of the given type"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakuo4cxc0",
+                                            "created": 1578982491468,
+                                            "text": "@args "
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvarqxeqog0",
+                                                    "created": 1578983031871,
+                                                    "text": "the runtime type of the actual arguments passed have annotations of the given types"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakx9fcjc0",
+                                            "created": 1578982497110,
+                                            "text": "@within "
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvas22jwz40",
+                                                    "created": 1578983056127,
+                                                    "text": "Within types that have the given annotation"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvakzvmhb40",
+                                            "created": 1578982502805,
+                                            "text": "@annotation"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bzvashpctww0",
+                                                    "created": 1578983090158,
+                                                    "text": "the subject of the join point has the given annotation"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvcch3g1p40",
+                                    "created": 1578987477226,
+                                    "text": "Caveat"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvccnjhvxk0",
+                                            "created": 1578987491257,
+                                            "text": "1.For JDK proxies, only pulibc interface method calls on the proxy can be intercepted."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvccv6tslk0",
+                                            "created": 1578987507905,
+                                            "text": "2.CGLIB, public and protected method calls on the proxy are intercepted even the package visible method."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvcdojm0yo0",
+                                            "created": 1578987571805,
+                                            "text": "3.Common interactions through proxies should always be desinged through public signatures"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvcfr1e1y80",
+                                    "created": 1578987733962,
+                                    "text": "PCD named bean"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bzvcgmmzlqg0",
+                                    "created": 1578987802748,
+                                    "text": "Combining pointcut expression"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bzvcgrg1ki00",
+                                            "created": 1578987813212,
+                                            "text": "pointcut expression using &&, || and !"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bzvch0600280",
+                                            "created": 1578987832196,
+                                            "text": "refer to pointcut expression by name"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
